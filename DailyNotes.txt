@@ -102,28 +102,54 @@ methods:
 Flow Control:
 ============
 
-	if
+	
+By default package for all the java files is java.lang
+By default parent for all the java classes is java.lang.Object
 
 
+Variables:
+===========
+
+		local 
+		global-->static,instance
 
 
+		JDK--->JRE-->JVM
 
 
+https://dzone.com/articles/jvm-architecture-explained
 
 
+Instance and Static :
+====================
 
 
+1)Syntax
+	for static properties static keyword is mandatory 
+	if there is no static i.e instance
+
+2)Memory
+		Abstraction,Encapsulation,Inheritance,Polymorphisam
+		
+	class is a collection of data members and member functions
+
+	object is instance of class
+		  memory
+
+	**instance properties will get memory when the object is created 
+	**static properties will get memory only once at the time of class loading into JVM 
+	**local variables will get memory when method is getting executed
+	
+
+3)Access
+	static properties can be accessed by using classname
+	instance properties can be accessed by using objref
 
 
+4)Usage
+	for common data like schoolname,orgname,countryname ... will go with static
 
-
-
-
-
-
-
-
-
+	for unique data like eid,email,phone,accno ... will go with instance
 
 
 
