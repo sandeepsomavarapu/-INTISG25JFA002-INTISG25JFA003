@@ -1,0 +1,151 @@
+Fullstack:
+
+	Language: communication with human
+	Programming Language: Communication with machine
+
+james gosling :Sun micro system-->Oracle 
+
+Platform Independent
+Garbage collection
+
+		
+Java Program:
+
+		JDK-->JRE-->JVM
+
+		java -version
+
+	Welcome.java
+		
+
+javac filename.java
+
+java classname
+
+		
+						Java
+		JSE				JEE					JME
+	corejava,awt,swings,applets,jdbc	servlets,jsp,spring,spring boot     Android
+
+1)desktop/standalone apps	calculator,notepad++,eclipse,vlc media 									player,antivirus
+2)web applications			gmail,fb,insta,youtube....	
+
+3)Mobile applications		
+
+4)Distributed applications		phonepe
+
+
+
+Corejava:
+=========
+
+identifiers:
+===========
+		a-z
+		A-Z
+		0-9
+		_
+		$
+
+class 23Welcome
+{
+
+
+}
+
+variables:
+===========
+	local 
+	global -->instance and static
+	variable is a place holder/container/name of memory location
+
+	syntax:
+		datatype varname=value;	
+
+datatype
+========
+	 int	eid		123	
+	String	ename		suresh
+	float	esal		23580.34
+	String	address		hyderabad
+	String	email		suresh@gmail.com
+	longint	contact		9494934734
+		
+
+			datatypes
+	Primitive       		Non-primitive
+	 one value			many values
+
+	byte	  1 byte	-128 to 127
+	short	  2 bytes	-32768 to 32767
+	int	  4 bytes	-2147483648 to ....647
+	long	  8 bytes	
+
+	float	  4		23.43434554545f	 5-6
+	double	  8		23.12321321354;  14-15
+
+	char	  2/1			'M'  ASCII   A-65,a-97
+	boolean	  1 bit	
+
+						137
+			byte age=31;
+
+methods:
+========
+	code reusability
+
+
+	accessmodifier static/instance void/anything methodname(list of params)
+	{
+	
+	}
+Flow Control:
+============
+
+	if
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

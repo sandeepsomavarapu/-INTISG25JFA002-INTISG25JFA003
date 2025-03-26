@@ -1,0 +1,663 @@
+language  fundamentals:-
+===================
+1)identifiers
+2)reserved words
+3)datatypes
+4)literals
+5)arrays
+6)types of variables
+7)var-arg methods
+8)main method
+9)command line arguments
+10)java coding standards.
+
+**************************************
+
+1)identifiers:-
+-----------------			int marks=90;
+*a name in java program is called identifier.
+*which can be used for identification purpose .
+* it can be method name or variable name class name or label name .
+class Test
+{
+psv main(String []args)
+{
+int x=10;
+}
+}
+
+5 identifiers are there in above program.
+**String is predifined class name in java.
+** name of the array.
+
+rules for java identifiers :-
+---------------------------------
+**the only allowed charecters in java identifiers are 
+ 
+   ==>     	 	 	  		a to z
+						A to Z
+						0 to 9		
+						$
+						_
+
+if we are using any other charecter we will get compile time error
+
+ex:- 1)total_number (valid)
+      
+      2)total#  (invalid)
+    
+**identifiers cannot start with digit 
+
+3)total123(valid)
+4)123total(invalid)
+
+
+** java identifiers are case sensitive offcourse java lang itself treated as case sensitive p.lang
+class test
+{
+int number=10;
+int Number=20;
+int NUMBER=30;
+} 
+
+**there is no length limit for java identifiers but it is not recommended to take to legthy identifiers
+
+**we cant use reserved words/keywords as identifiers 
+
+int c=10;(valid)
+int if=20;(invalid)
+** all predifined classes and interfaces names we can use as identifiers
+Ex1:-class Test
+{
+psvmain(String args[])
+{
+int String=888;
+sopln(String);
+}
+}o/p:-888
+Ex2:-
+class Test
+{
+psvmain(String args[])
+{
+int Runnable=999;
+sopln(Runnable);
+}
+}o/p:-999
+
+
+**even though it is valid but it is not a good prograing practise because it reduses readability and creates confusion.
+
+Q) which of the following are valid java identifiers ?
+
+    total_number (valid)
+    total#          (invalid)
+    123total      (invalid)
+     total123   (valid) 
+     ca$h         (valid)
+     _$_$_$_$_$_(valid)
+   all@hands    (invalid)
+   java2share (valid)
+   Integer  (valid)
+   Int      (valid)
+   int      (invalid)
+
+******************************************************
+
+Reserved words:-
+===============
+
+**in java some words reserver to represent some meaning  or functionality such type words are called reserved words.
+
+                                                                           
+                                                                                 53 reserved words			
+                                                                                           |
+                                     -----------------------------------------------------------------------------------------
+                                     |                                                                                                          |
+                                keywords(50)                                                                         reserved literals(3)
+                                |                                                                                                   |
+                    --------------------                                                                            --------------------
+                   |                        |                                                                           |            |              |
+       used keywords(48)         un used keywords(2)                                         							true        false           null
+      |          |           |             |           |
+    if        else........                 goto     const
+
+
+keywords for data types:-
+-------------------------------
+
+ (8)
+byte 		
+short 
+int 
+long 	 	
+float
+double
+boolean  true,false
+char
+
+keywords for flow control
+----------------------------------
+
+ (11)   
+   if
+  else
+  switch
+  case
+  default 
+  while
+  do
+  for
+  break 
+  continue
+  return
+
+keywords for modifiers:-
+------------------------------
+  
+   (11)
+public 
+private
+protected
+static
+final
+abstract
+synchronized
+native
+strictfp(1.2)
+transient
+vloatile
+
+keywords for exception handling:-
+-----------------------------------------
+ (6)
+try
+catch
+finally
+throw
+throws
+assert(1.4)
+
+class related keywords:-
+-----------------------------
+   (6)
+class
+interface
+extends
+implements
+package
+import
+
+object related keywords:-
+-------------------------------
+  (4)
+new
+instanceof
+super
+this
+
+void return type keyword:-
+--------------------------------
+''void''
+
+**in java return tpe is mandatory if a method wont return anything then we have to declare that method with void return type
+
+*** but in C lang return type is optional and default return type is "int"
+
+unused keywords:-
+---------------------
+ (2)
+goto
+const
+
+ 
+goto:-
+
+usage of goto created  several problems in old languages and hense sun people baned this keyword in java
+
+const:-
+
+use final instead of const
+
+**goto and const are unused keywords and if we are trying to use we will get compile time error .
+
+Reserved literals:-
+----------------------
+ (3)    
+ true   |
+ false  | ---- values for boolean data type
+          |
+ 
+null-----default value for object referrence
+
+
+enum keyword(1.5):-
+----------------------
+ *we can use enum to define a group of named constants 
+
+enum moth
+{
+JAN,FEB,...DEC
+}
+Enum bear
+{
+kf,ko,rc,fo....
+}
+
+conclusions:-
+-----------------
+**All 53 reserved words in java contains only lower case alphabet sysmbols.
+
+**in java we have only new keyword and there is no delete keyword because distruction use less objects is the responcibility of garbage collecter.
+
+*the following are new keywords in java.
+
+strictfp(1.2v)
+assert(1.4v)
+enum(1.5v)
+strictfp butnotstrictFp
+instanceof  butnot  instanceOf 
+synchronized  butnot  synchronize
+extends  butnot extend
+implements  butnot  implement
+import  butnot  imports
+const   butnot constant
+
+
+Q)Which of the follwing list contains only java reserved words
+
+new,delete
+goto,constant
+break,continue,return,exit
+finally,final,finalize
+throw,throws,thrown
+notify,notifyall
+implements,extends,imports
+sizeof,instanceof
+instanceOf,strictFp
+byte,short,Int
+
+none of the above
+
+
+
+
+
+
+                                                                                              DATA TYPES
+                                                                                            ***************
+** In java every variable and every expression has some type each and every data type is clearly defined every assignment should be checked by compiler for type compatabilty .
+
+*Because of above reasons we can conclude java language is strongly typed programming language .
+
+**java is not considered as pure ooplang because several oop features are not satisfied by java.(like operater overlaoding and  multiple inheritance etc)
+
+**more over we are depending on premitive data types which are non objects.
+                           
+                           
+                                              ********************************************************************************
+                                              ********************************************************************************
+                      
+                                                                                                               premitive data types
+                                                          ---------------------------------------------------------------------------------------------------------------
+                                                          |                                                                                                                                   |
+                                       numeric data types                                                                                                   non -numeric datatypes                     
+                                      |                           |                                                                                                                    |
+                            integral DT         floating pointDT                                                                                                        |
+                               |                                    |-->float                                                                                                       |-->char
+                               |-->byte                         |                                                                                                                  |
+                               |                                    |-->double                                                                                                   |-->boolean
+                               |-->short
+                               |
+                               |-->int
+                               |
+                               |-->long
+                               |
+
+
+**except booleanand char remaining DT are considered as signed DT because we can represent both positive and negitive numbers.
+
+
+Byte:-
+------
+size--1byte(8bits)
+max_value--   +127
+min_value--    -128
+range:       -128 to 127
+ 
+the most significant bit acts as sign bit ,0 means positive number ,1 means negitive number
+
+positive number s will be represented directly in the memory where as negitive numbers will be represented in two's compliment form.
+
+**byte is the best choice if we want handle the data interms of streams either from file or from the network(file supported form and network supported form is byte)
+
+short:-
+--------
+*this is the most rarly used DT in java
+
+size--2bytes
+
+range--    -32768 to 32767
+
+ex:-
+
+short s=32767;
+short s=32768;//invalid  CE :-plp
+short s=10.5;//invalid  CE :-plp
+short s=true;//incmpatable error
+**short DT is best suitable for 16 bit processors like 8085
+but these processors are completly outdated and hense corresponding short DT is also outdated DT  
+
+**int:-
+======    
+the most commnly used DT is int
+
+size :4 bytes
+
+range:  -2147483648 to 2147483647
+
+ex:-
+int x=2147483647;
+int x=2147483648;//invalid  CE :-integer number two large
+int x=2147483648;//invalid  CE :-plp
+int c=true; //invalid  CE :- incompatable err
+
+long:-
+====
+sometimes int may not enough to hold big values then we should go for long type.
+
+
+ex2:-the number of charecter s present in a big file may exceeds int range hense the return type" length ()"  is long but not int.
+
+
+long l=f.length();
+
+size:- 8 bytes(64 bits)
+range:- (-2 power 63) to( 2 power 63)-1
+
+**All the above datatypes(byte,short,int,long)meant for representing integral values if we want represent floating point values then we should go for floating point datatypes.
+
+Floating point DT;-
+=============
+ float DT:-		float salary=902.0909090234234239f;
+---------------
+* if we want  5 to 6 decimal places of accuracy then we should go for 
+*float follows single presicion.
+*size 4 bytes.
+*Range:  -3.4e38 to 3.4e38
+double DT:-
+---------------
+* if we want  14 to 15 decimal places of accuracy then we should go for doble .
+* doble follows doble presicion.
+* size is 8 bytes.
+*Range:  -3.4e38 to 3.4e38
+
+Boolean:-
+-----------
+size(not applicable(virtual machine depedent)).
+range(not applicable(but allowed values are true or false)).
+
+boolean b=true;
+boolean b=0;//invalid  CE:- incompatable types
+boolean b=True;// CE:-cant find symbol symbol:varable true location class test
+boolean b="True";//CE:-incompatable types found: j.l.String required:-boolean
+
+Ex:-
+----
+int x=0;
+if(x)
+sopln("hello");
+else
+sopln("hi");
+
+CE:-incompatable types
+ found:int
+required:boolean
+
+
+Ex:-
+while(1)
+sopln("hello");
+
+CE:-incompatable types
+ found:int
+required:boolean
+
+Char:-
+=====  ''
+*Old languages(c,c++)are ascii(256) code based.and the number of allowed different ascii code charecters are (<=256)to represent these 256 charcters are enough hence the size of char in old lang is 1 byte.
+but java is unicode based and the number of different unicode charecters are >256and <=65536/
+*To represent these many charecters 8 bits maynot enough compulsary we sholud go for 16 bits hence the size of char in java is 2 bytes 
+range: 0 to 65535 
+byte b;
+Summary of java premitive datadypes:-
+============================										java.lang
+DT                               size(bytes)                    wrapperclass                defaultvalues               
+byte                                1                                    Byte                             0
+short                               2                                    Short                            0
+ int                                  4                                    Integer                           0
+long                                8                                    Long                              0
+float                                4                                    Float                              0.0
+double                             8                                   Double                            0.0
+boolean                           NA 1 bit                                Boolean                           false
+char                                 2                                   Charecter                       0(represents space charecter)
+
+*****NULL IS THE DEFAULT VALUE FOR OBJECT REFFERENCE AND WE CANT APPLY FOR PREMITIVES IF WE ARE TRYING TO USE FOR PRIMITIVE THEN WE WILL GET COMPILE TIME ERROR.
+EX:-
+	char ch=niull;//CE:-incompatable types 
+
+
+
+LITERAL:-
+***********
+
+==>a constat value which can be asigned to the variable is called literal.
+ 
+           Ex:-       int x=10;
+  
+*here int is data type and x is name of variable and 10 is constant value "literal"
+
+Integral literals:-
+==========
+for integral datatypes (byte,short ,int,long)we can specify literal value in the following ways .
+
+1)Decimal literals /form(base-10)
+allowed digits are 0-9
+ex:-
+int x =10;
+
+2)octalform (base -8)
+allowed digits are 0 to 7 
+literal value sholud be prefixed with zero.
+ex:-
+int x=010;
+
+3)hexa decimal  form(base-16)
+allowed digits are 0 to 9,a to f.
+
+*for extra digits(a-f)we can use both lower case and upper case charecters,this is one of very few areas where java is not case sensitive.
+
+*literal  value should be prifixed with 0x or oX.
+
+ex:-int x=oX10;
+these are only possible ways to specify literal value for integral DT
+
+
+
+
+ARRAY:-
+========
+**an array is an indexed collection of fixed no of  homogeneous data elements.
+
+*the main advantage of arrays is we can represent huge number of values by using single variable  so that readability of the code will be improved ,but the main dis advantage of arrays  is fixed in size I.e once we create an array there is no chance of increasing or decreasing our requirement hence to use arrays concept compulsary we shoud know the size in advance,which may not possible always.
+-
+Array declaration:
+=============
+one dimentional array declaration:-
+------------------------------------------
+1)int[] x;         recommended because name is clearly separated from type
+2)int   []x;
+3)int x[];
+
+**At the time of declaration we have to specify the size otherwise we wil get compile time error  .
+
+      int[6]  x;//invaalid
+      int[]    x;//valid
+2-dimentional array declaration:-
+---------------------------------------
+int[][]   x;
+int    [][]x;
+int  x[][];
+int[]  []x;
+int[]   x[];
+int   []x[]; 
+***all are valid
+which of the follwing are valid
+
+int[] a,b; //a=>1,b=>1
+int[] a[],b; //a=>2,b=>1
+int[] a[],b[]; //a=>2,b=>2
+int[] []a,b; //a=>2,b=>2
+int[] []a,b[]; //a=>2,b=>3
+int[] []a,[]b; //CE:-
+
+*if  we want specify dimention the before the variable that fecility is applicable only for first variable in a declaration if we are trying to apply for remaining variables we will get compile time error. 
+
+*int[]  []a,[]b,[]c;  
+upto a valid,b and c are not valid.
+
+3-dimentional array:-
+------------------------
+int[][][]  a;
+int [][][]a;
+int a[][][];
+int[]   [][]a;
+int[]  a[][];
+int[]  []a[];
+int[][]  []a;
+int[][]   a[];
+int    [][]a[];
+int   []a[][];
+
+Array  creation:-
+--------------------
+
+**every array in java is an object only hence we can create array by using new operater
+
+* int[][]   a=new int[3];/a is an refference variable of object.
+
+**for every arraytype corresponding classes are available and these classes are part of java language and not available to the programer level.
+sopln(a.getClass().getName());
+
+o/p:-       [I
+byte        [B
+boolean   [Z
+
+Loop holes
+1)at the time array creation compulsary we should specify the size  otherwise we will get compile time error
+
+int[] x=new int[];//invalid
+int[] x=new int[3];//valid
+
+**it is legal to have an array with the size zero in java.
+int[] x=new int[0];//valid
+
+***//void main(String[] args)
+****//sopln(args.length);
+**if we are trying to specify array size with negitive int value we will get runtime exception.
+int[] x=new int[-3];//valid
+
+RE:-negative ArraySizeException
+
+*to specify array size the allowed datatypes are ()if we r trying to specify any other type then we will get CE.
+int[] x=new int[10];//valid
+int[] x=new int['a'];//valid
+byte b=20;
+int[] x=new int[b];//valid
+short s=30;
+int[] x=new int[s];//valid
+int[] x=new int[10 l];//CE plp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
