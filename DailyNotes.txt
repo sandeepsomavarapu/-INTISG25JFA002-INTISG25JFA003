@@ -153,12 +153,179 @@ Instance and Static :
 
 
 
-
+System.out.println();
 
 				
 
+class Test{
+	static String name=new String("welcome");//length  instance
+
+main()
+{
+		Test.name.length()
+
+}
+	
+}
+
+
+class System{
+	static PrintStream out=new....();
+
+
+}	
+	System.out.println();
+
+
+OOPS:
+======
+		performance and security
+	JAVA is OOPL/OOPS(4 features)
+
+	Inheritance
+	polymorphisam	performance
+	abstraction
+	encapsulation	security
+
+
+Inheritance:
+===========	extends and implements
+
+		extending the features from one class to another 
+
+
+	class Test
+		{
+		1000 methods
+
+		}
+
+	class Client extends Test
+		{
+		200 methods
+		}
+
+Multiple Inheritance:
+=====================
+
+
+Abstraction:
+===========
+	
+	abstract method:
+
+	method with out logic/implementation/body
+
+
+	class		:it's a collection only concrete methods
+	abstract class	:it is combination of both concrete and abstract methods
+	interface 	:its a collection only abstract methods
 
 	
+	interface:
+	=========	
+		to achieve abstraction in java 
+
+		to achieve Multiple Inheritance 
+
+
+
+
+		interface parent1 		interface parent2
+			{			{
+			m1();			m1();
+
+			}			}
+			
+		class Child implements parent1,parent2
+			{
+			m1(){
+			}
+
+			main()
+			{
+				Child child=new Child();
+				child.m1();
+				
+			}
+
+			}
+
+	Java Doesn't support multiple inheritance through classes
+	Java  support multiple inheritance through interfaces
+
+Encapsulation:
+=============
+
+	public,private,protected,default,this,super,constructor,final,encapsulation
+
+
+
+public class CommandLineArgs {
+	public static void main(String[] args) {// java CommandLineArgs 34 56 mukesh 23.56
+		int a = Integer.parseInt(args[0]);// "34"
+		int b = Integer.parseInt(args[1]);
+
+		String name = args[2];
+		int result = a + b;
+		float salary = Float.parseFloat(args[3]);
+
+		System.out.println("Add of two numbers " + result + " " + name + " " + salary);
+
+	}
+}
+
+
+
+
+empid	int
+empname	string
+empsal	float
+empadd	string
+empgender char 'm' 'f'
+committed  Boolean true /false
+
+
+exception handling
+collections
+java8 
+
+
+	Encapsulation:
+	=============
+	its process of wrapping/binding data and corresponding methods together
+
+
+
+String,StringBuffer,StringBuilder
+
+
+
+Exception Handling:
+===================
+	1)system defined error messages
+	2)abnormal termination
+
+
+
+	1)user friendly error messages
+	2)normal termination
+
+
+		try{error code/risky code},catch{handling code},finally,throw,throws
+
+
+	throw 
+
+	throws
+
+
+
+
+		
+
+
+
 
 
 
