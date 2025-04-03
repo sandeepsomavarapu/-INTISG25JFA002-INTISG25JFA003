@@ -312,33 +312,209 @@ Exception Handling:
 	2)normal termination
 
 
-		try{error code/risky code},catch{handling code},finally,throw,throws
+		try{error code/risky code},catch{handling code},finally{cleanup code},throw,throws
 
 
 	throw 
 
 	throws
 
+	
+Collections Framework:
+======================
+		
+	variables--->one value
+	arrays--->group of values
+		
+		1)fixed in size 
+		2)homogeneous/similar data 
+		3)no utility methods
 
 
+ Advantages With Collections:
+		1)not fixed in size or growable in nature
+		2)homogeneous data and heterogeneous data
+		3)lots utility methods
+
+						java.util 
+					   Collection(I) add
+			
+			List(I)				Set(I) 				Queue(I)
+	1)duplicates are allowed 	1)duplicates are not allowed
+	2)insertion order is preserved  2)insertion order is not preserved
+		ArrayList
+		LinkedList
+		Vector	legacy(deprecated)
+		Stack		FILO
+		Queue		FIFO	
+
+				t1,t2,t3
+
+
+
+			public void m1(){
+
+			t1,t2,t3
+			}
+
+			t1
+			public void synchronized m2(){
+	
+			}
+
+		interface
+		Functional Interface		SAM
+		marker interface 		zero	
+
+
+		Comparable    NSO  FI   compareTo()
+		Comparator    CSO  FI  compare()
+
+
+Multi Threading:
+================
+
+Java8 features:
+===============
+	Functional Interface
+	lambda Expressions
+	default and static methods
+	:: method/constructor reference
+	Date/Time Api LocalDate,LocalTime,LocalDateTime....
+	Stream Api
+	Predicate,Function,Supllier,Consumer(Predefined FI from 1.8)
+	Optional
+
+
+
+
+		//returns -ve if object1 has to come before object2
+		//returns +ve if object1 has to come after object2
+		//returns 0 if both objects are same 
+Agile
+
+SOLID
+
+
+Spring Framework:
+==================
+	2003	spring 1.x 
+		
+		spring 6.x		
+		
+	ROD Johnson
+	
+	spring is non-invasive framework, which is used to create light weight and loosely coupled application
+	
+
+
+	FRAMEWORKS
+		INVASIVE	:struts,it will force the developer to implement predefined api
+		NON-INVASIVE	:spring,hibernate,it will never force the developer to implement predefined api
+
+	InvalidCredential extends Exception
+
+	Test extends Thread/Runnable(run)
+
+	JEE:Servlets  3 ways 
+
+	
+
+	class Login implements Servlet/GenericServlet/HttpServlet-12 methods
+	{
+
+	}		heavy weight 
+
+	1000*12=12000
+	
+
+		EJB-->Rod Jonson--interface21-->spring framework-->light weight 
+
+
+
+loosely coupled
+tightly coupled
 
 		
 
 
+	Spring non-invasive/lightweight and loosely coupled
+
+
+		Test 
+
+				spring container
+
+
+		client
+
+		//Test test=new Test();
 
 
 
+	spring container -->interface-->BeanFactory,ApplicationContext
+
+		Entire Object Life cycle 
+	
+		1)creation of objects	
+		2)Wiring the objects
+		3)Configuring the objects
+		4)Destroying the objects
+
+	JARS
+	
+	MAVEN-->Build Tool
+	
+
+Spring Modules
+
+	spring core/dependency injection module/IOC
+	spring jdbc
+	spring orm
+	spring MVC
+	spring AOP	
 
 
+spring boot
+
+	
+
+		<bean id="" class="" scope="" autowire="byname/bytype/constructor" primary=true>
+		<property name="" value="" ref>
+		<constructor-arg>
+
+	Annotation Config	
+
+		@Component
+		@Configuration
+		@ComponentScan
+		@Autowired
+		@Scope
+
+	JAVA Config
+
+NOTE:Spring has given annotations for user defined classes like @Component but not for predefined classes
 
 
+		java -->database
 
 
+		Employee ---><bean >
+
+		Employee ---->@Component
+
+		Employee ---->@Bean
 
 
+		@Configuration
+		
+
+		@Bean
+		public Employee getEmployee()
+		{
+			return new Employee();
+
+		}
 
 
-
-
-
-
+		
