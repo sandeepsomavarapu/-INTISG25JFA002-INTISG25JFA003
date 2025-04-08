@@ -517,4 +517,203 @@ NOTE:Spring has given annotations for user defined classes like @Component but n
 		}
 
 
+		SQL
+
+	DDl,DML,DRL
+
+	DDL:create,alter,drop,truncate,rename
+	DML:Insert,update,Delete
+	DRL:Select
+
+	constraints
+	============
+		unique,notnull,check,Fk,PK
+
+
+notnull
 		
+JDBC:
+=====  JAVA Database Connectivity
+	
+API-->sun micro system
+
+			JDBC Api		
+		JAVA   ---------->  Database  
+
+5 steps
+
+	
+1.load the driver class
+
+2.create the connection
+
+3.create the statement
+
+4.execute the query
+
+5.close the connection
+
+	MySQL.jar
+
+Spring core:
+============
+	@Component	dependency injection/IOC
+	@Configuration 	
+	@ComponentScan
+	@Autowired
+	@Bean
+	@Value
+	@PropertySource	
+	@Qualifier
+	@Scope
+	
+
+	
+
+JDBC
+	-->WO Exception handling	
+	-->Boilerplate code
+	-->Tightly coupled
+
+Spring JDBC-->JDBC
+	Loosely coupled
+	no exception handling
+	no boilerplate 
+
+
+	JdbcTemplate--->execute,update,query
+
+
+	DriverManagerDataSource-->Datasource
+
+
+
+	maven-->spring core /context
+		mysql-connector
+		spring-jdbc
+
+	layered Architecture:
+	=====================
+
+				backend jdbc
+gmail login
+	username	xyz
+	password	xyz	--->
+
+Test.java
+	Scanner -->
+
+	username
+	password
+		 5 steps
+		
+					gmail
+	response				username password
+					 xyz	  xyz
+
+	3 layered
+
+ presentation/controller/ui layer
+	12
+	13
+	
+
+service layer /business logic layer
+	12-13
+
+DAO/Repository layer
+
+	database logic
+
+	database
+
+JDBC
+Spring JDBC-->JdbcTemplate
+
+	MYSQl-->Oracle
+
+
+
+JPA-->JDBC--
+
+	no table creation
+	no query's(no database dependent query)
+	cache support
+	light weight 
+
+	select * from employee; 1 lac
+
+
+	JPA-->specification
+
+	ORM tools--->implementation hibernate,eclipselink,toplink,ibatis.....
+
+		Object Relational Mapping
+
+
+
+		update(query,employee)
+
+						object-->row
+						classname--->tablename
+						variable--->column name
+		@Entity
+		@Table(name="sleeping_emps")
+
+		class Employee{
+		@Column(name="eid")
+		@Id
+		@GeneratedValue		1,+1	1000+10	//sequence
+		private int empId;
+		private String empName;
+		private int empSal;
+		private Stirng empAddress;
+		@OnetoOne/@onetomany/@manytoone/@manytomany
+		private Department deptno;
+
+			}
+
+		
+
+
+
+
+
+
+
+
+
+
+
+Single Responsibility Principle (SRP):
+A class should have only one reason to change, meaning it should have a single, well-defined responsibility.
+
+Open/Closed Principle (OCP):
+Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
+
+Liskov Substitution Principle (LSP):
+Subtypes should be substitutable for their base types without altering the correctness of the program.
+
+Interface Segregation Principle (ISP):
+Clients should not be forced to depend on methods they do not use.
+
+Dependency Inversion Principle (DIP):
+High-level modules should not depend on low-level modules; both should depend on abstractions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
