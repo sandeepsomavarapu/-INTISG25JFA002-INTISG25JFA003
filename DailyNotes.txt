@@ -703,17 +703,128 @@ High-level modules should not depend on low-level modules; both should depend on
 
 
 
+Product Management App
+	
+	Task:
+		9.get the products greater than for the given price
+		input :9000
+		pid  pname price  category  quantity
+		123 	x   9200  abc		20 
+		124 	y   9300  lmn		10
+		
+			
+
+ProductManagementAppUsingJPA
+
+ProductManagementAppUsingSpingJPA
+
+
+
+	spring and orm
+
+
+	pom.xml
+	
+
+	java config 
+
+	tomcat server 
+
+
+Spring Boot:
+===========
+
+	production ready application	
+
+
+	1)AutoConfiguration :Most of the commonly used classes already configured by the spring boot			DMDS,Hikari,c3po,tomcat......
+	2)starters   		spring-boot-starter-parent
+	3)embedded server
+	4)Actuators   url
+	5)inbuilt DB h2
+
+
+	3.x
+
+This is a convenience annotation that is equivalent to declaring @SpringBootConfiguration, @EnableAutoConfiguration and @ComponentScan.
+
+
+Java8 features:
+
+	1.lambda expressions
+	2.functional interfaces
+	3.Default and static methods
+	4.:: method reference/constructor reference
+	4.predefined functional interfaces(predicate/supplier/consumer/function)
+	5.stream api
+	7.Date and time api
+	8.Optional class
+	
+
+	
+Case Study
+	
+	Backend    individual project
+
+	microservices architecture
+	layered architecture
+	MySQL 
+	jpa+hibernate
+	
+	best practices(sonar)
+	junit/Mockito test cases
+	Lombok
+	git
+	proper exception handling
+	validations
+	api gate way
+	config server
+	eureka server
+	hystrix
+	open feign/rest template/webclient
+
+	
 
 
 
 
 
+	Junit/Mockito
+
+	TDD testing
 
 
+		Junit
 
 
+		class Calculator
+		{
+			public int add(int a,int b)
+			{
+			return a+b;
+			}
+		}
+						Assertions
 
+		class CalculatorTest{
+	
+			Calculator calci=new Calculator();
+			@Test
+			public void testAdd()
+			{
+			assertEquals(3,calci.add(3,2));
+			}
+		
+			}
 
+Junit5 -->
 
+		Junit Jupiter
+
+		Junit Vintage
+
+		Junit Platform
+		
+	
 
 
