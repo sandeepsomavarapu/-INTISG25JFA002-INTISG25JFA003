@@ -825,6 +825,154 @@ Junit5 -->
 
 		Junit Platform
 		
+Lombok:
+======
+
+		@Setter	
+		@Getter
+		@AllArgsConstructor
+		@NoArgsConstructor
+		@Data	-->@setter/@getter/@ToString/@EqualsAndHashcode/@RequiredArgs..
+		@ToString
+		@RequiredArgsConstructor
+		@EqualsAndHashcode
+
+Slf4j:
+=====
+		Logging
+Log message
+		info
+		warn
+		debug
+		error
+		fatal
+
+Appender
+		console
+		file	
+		database
+Format
+
+		
 	
+SOLID:
+======
+
+
+Agile:
+======
+
+
+GIT:
+====
+	VCS		SVN
+	DVCS		GIT
+
+
+		git   GitHub   gitbucket  gitlab
+
+Spring Boot Data Jpa & Rest
+
+
+		Repository layer -->
+
+		Repository
+		CrudRepository
+		ListCrudRepository
+		PagingAndSortingRepository
+		ListPagingAndSortingRepository
+		JpaRepository
+			
+		@Query
+		DSL Grammar -Domain Specific Lang
+
+Spring core
+spring jdbc
+spring jpa
+
+spring boot JPA
+
+web application
+			
+	servlet/jsp,MVC
+
+	Webservices
+
+Model view 	controller
+	html/jsp		
+
+		login
+		register
+		index
+
+		organize
+Spring MVC-->user--->app
+
+		Front controller-->DispatcherServlet  -->html
+		login
+		register
+		index
+
+		gmail-->login
+
+
+		ATM--->User
+
+Webservices:
+============
+its a technology which is used to share information between two interoperable applications
+	
+
+		RMI
+		EJB		app1   app2-->java
+		SP
+		
+		DCOM		.net	
+		RPC		c/c++
+		CORBA		
+
+		SOAP simple object access protocol
+		REST Representational state transfer
+
+
+		
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Spring Boot DataJpa:
+===================
+
+
+
+
+
+
+
+
+
+
 
 
