@@ -931,18 +931,54 @@ its a technology which is used to share information between two interoperable ap
 		RPC		c/c++
 		CORBA		
 
-		SOAP simple object access protocol
+		SOAP simple object access protocol(XML)
 		REST Representational state transfer
 
 
+		JSON/XML/HTMl/PT/JS
+
+https://stackabuse.com/guide-to-spring-data-jpa/
+
+Spring Boot Data Jpa REST:
+========================		Jackson/GSON
+
+					JSON  
+		APP1			XML-JAXB	   App2(Angular)
 		
+		updateProduct-->Product    json
 
 
-
-
-
-
+	Product product=new Product(12,"samsung",34400,"elctronics",90);
 		
+	{
+	"productId":12,
+	"productName":"samsung",
+	"productPrice":23000,
+	"productCategory":"electronics",
+	"productQuantity":2,
+
+	}
+Validations:
+===========
+
+
+Exception handling:
+==================
+
+	1)Application level/global exception handling
+
+	2)Controller level exception handling
+
+
+
+Microservices Architecture(config server,eureka server,api gate way,hystrix)
+Junit+Mockito
+Naming conventions
+Coding standards+Best Practices }sonar 
+comments
+global exception handling
+validations
+JWT
 
 
 
@@ -962,8 +998,15 @@ its a technology which is used to share information between two interoperable ap
 
 
 
-Spring Boot DataJpa:
-===================
+
+
+
+
+
+
+
+
+
 
 
 
