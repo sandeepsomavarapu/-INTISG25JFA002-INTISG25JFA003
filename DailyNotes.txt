@@ -969,6 +969,73 @@ Exception handling:
 
 	2)Controller level exception handling
 
+Security:
+=========
+
+	Authorization
+	
+	Authentication
+
+Microservices Architecture:
+============================
+
+ Divide/decompose/split your large project into smaller services AND later communicate them.
+
+
+
+ 
+	Monolithic Architecture
+	=========================
+		single project
+			server
+			database
+			jar
+
+
+	we cannot scale server for one particular module.
+	single technology
+	single database
+
+
+
+		not single project(micro service)
+		
+Shopping App
+		
+	Product Microservice
+	Cart Microservice
+	Order Microservice
+	Payment Microservice
+	Offer  Microservice
+	Wishlist Microservice
+
+
+			
+			1)Independently Deployable/Un-Deployable
+	
+			2)Independently Scalable
+	
+			3)Independently developed/Tested
+
+			4)Independent on Technology/Framework
+
+	
+
+
+
+ Communication
+
+		Synchronous--->HTTP-->RestTemplate,Open Fiegn,WebClient
+		Asynchronous-->Messaging protocols-->Kafka , Rabbit MQ ,ACTIVE MQ
+
+
+
+
+
+
+
+
+
 
 
 Microservices Architecture(config server,eureka server,api gate way,hystrix)
